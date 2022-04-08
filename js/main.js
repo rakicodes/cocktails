@@ -21,7 +21,9 @@ function searchByName() {
     fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${name}`)
     .then(res => res.json())
     .then(data => {
-        console.log(data.drinks);
+        //console.log(data.drinks);
+        
+        document.querySelector(`#cocktails`).innerHTML = '';
         for (let i=0; i<data.drinks.length; i++) {
             let ingredients = getIngredients(data.drinks[0])
             document.querySelector(`#cocktails`).innerHTML += `<section id=cocktail-${i}></section>`
