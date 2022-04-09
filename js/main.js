@@ -111,5 +111,3 @@ function getIngredients(drink) {
 let carousel = new makeCarousel(cocktails, 0);
 document.getElementById('prev').addEventListener('click', carousel.prev);
 document.getElementById('next').addEventListener('click', carousel.next);
-
-console.log(cocktails);
