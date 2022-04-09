@@ -6,9 +6,12 @@
   	<meta name="keywords" content="one, two, three">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<title>Blank Template</title>
+		<title>Cocktail Recipes</title>
 
 		<!-- external CSS link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
@@ -17,7 +20,13 @@
 		<input id="name-input" type="text" placeholder="Search">
 		<button id="name-button">Enter</button>
 
-		<section id="cocktails"></section>
+		<section id="carousel" class="visibility-hidden">
+			<button id="prev" class="carousel-button">&#8656;</button>
+			<section id="cocktails">
+				<p>Search for something...</p>
+			</section>
+			<button id="next" class="carousel-button">&#8658;</button>
+		</section>
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
