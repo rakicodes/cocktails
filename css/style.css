@@ -22,21 +22,118 @@
 /*******************************************/
 
 body {
+  font-family: 'Roboto', Arial, sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
 
+img {
+  width: 100px;
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+body {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px 20px;
 }
 
-footer {
-
+h1 {
+  flex: 1 100%;
+  text-align: center;
 }
+
+input {
+  flex: 1 80%;
+  padding: 5px 10px;
+}
+
+button {
+  flex: 1 20%;
+}
+
+#carousel {
+  display: flex;
+  flex: 1 100%;
+  min-height: 75%;
+  padding: 0 10px;
+  margin: 20px 0;
+}
+
+.carousel-button {
+  align-self: center;
+  padding: 1%;
+  flex: 1 2.5%;
+}
+
+#cocktails {
+  display: flex;
+  flex: 1 90%;
+}
+
+.cocktail {
+  flex-flow: row wrap;
+  height: 100%;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.cocktail h2 {
+  text-align: center;
+  flex: 1 100%;
+}
+
+.cocktail ul {
+  flex: 1 70%;
+}
+
+.cocktail img {
+  flex: 1 30%;
+}
+
+.cocktail p {
+  flex: 1 100%;
+}
+
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+button {
+  cursor: pointer;
+}
+
+.active {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+.visibility-visible {
+  visibility: visible;
+}
+
+#carousel {
+  background: rgb(189, 189, 189);
+}
+
+.carousel-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  
+}
+
+.carousel-button:hover {
+  background: rgba(128, 128, 128, 0.484);
+
+}
